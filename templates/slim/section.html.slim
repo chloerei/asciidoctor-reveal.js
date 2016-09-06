@@ -1,6 +1,6 @@
 / OPTIONS PROCESSING
 / strip IDs the same way revealjs does (remove when hakimel/reveal.js#1230 is fixed)
-- @id = @id.gsub(/^[a-zA-Z0-9\-\_\:\.]/, '')
+- @id = @id && @id.gsub(/^[a-zA-Z0-9\-\_\:\.]/, '')
 
 / hide slides on %conceal, %notitle and named "!"
 - titleless = (title = self.title) == '!'
